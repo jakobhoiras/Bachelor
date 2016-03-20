@@ -66,7 +66,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-family: Georgia, serif;
-	font-weight: bold;
+
 
 }
 
@@ -85,12 +85,10 @@ body{
 	font-size: 22px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
 	height: 30px;
 	width: 100%;
 	text-align: center;
-	font-family: Georgia, serif;
-	font-weight: bold;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .CGInputDiv1 {
@@ -107,19 +105,19 @@ body{
 	outline: none;
 	width: 100%;
 	height: 20px;
-	font-size: 18px;
+	font-size: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 .targetDateDiv {
 	width: 600px;
-	height: 150px;
+	height: 75px;
 	border: none
 	padding: none;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
-	font-family: Georgia, serif;
-	font-weight: bold;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .targetDateDiv2 {
 	width: 300px;
@@ -133,8 +131,9 @@ body{
 	outline: none;
 	width: 100%;
 	height: 20px;
-	font-size: 18px;
+	font-size: 15px;
 	text-align: center;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .CGInputNrDiv1 {
 	width: 90px;
