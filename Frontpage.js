@@ -1,4 +1,4 @@
-var current = "#Frontpage";
+var current = "Frontpage";
 
 function hideDiv(theDiv) {
 	$(document).ready(function(){
@@ -12,42 +12,41 @@ function showDiv(theDiv) {
 	});
 }
 
-function createCG(name) {
-	var headDiv = document.createElement('div');
-		headDiv.innerHTML = headDiv.innerHTML + 'CreateGoal';
 
-	var iDiv = createDiv(name, 'FrontpageMainDiv');
 
-	var iButton = createDiv('frontButton', 'button');
-		iButton.innerHTML = iButton.innerHTML + 'Frontpage';
-		iButton.setAttribute('onclick', 'goTo(\'Frontpage\');');
+function createElem(type, id, className) {
+
+	if (type === 'div') {
+		var elem = document.createElement('div');
+	}
+
+	if (type === 'form') {
+		var elem = document.createElement('form');
+	}
+
+	if (type === 'inputText') {
+		var elem = document.createElement('input');
+		elem.setAttribute('type', 'text');
+	}
+	if (type === 'inputDate') {
+		var elem = document.createElement('input');
+		elem.setAttribute('type', 'date');
+	}
+
 	
-		iDiv.appendChild(headDiv);
-		iDiv.appendChild(iButton);
+	if (id !== 0) { elem.setAttribute('id', id); }
+	if (className !== 0) { elem.setAttribute('class', className); }
 
-		document.getElementById('backDiv').appendChild(iDiv);
-}
-
-function createDiv(id, className) {
-	var newDiv = document.createElement('div');
-		newDiv.setAttribute('id', id);
-		newDiv.setAttribute('class', className);
-
-		return newDiv;
+	return elem;
 }
 
 function goTo(target) {
 
 	var targetDiv = document.getElementById(target);
-	var hasher = "#";
-	var newTarget = hasher.concat(target);
+		targetDiv.setAttribute('class', 'FrontpageMainDiv');
 
-	if (targetDiv === null) {
-		createCG (target);
-	} else {
-		showDiv(newTarget);
-	}
+	var currentDiv = document.getElementById(current);
+		currentDiv.setAttribute('class', 'FrontHide');
 
-	hideDiv(current);
-	current = newTarget;
+	current = target;
 }

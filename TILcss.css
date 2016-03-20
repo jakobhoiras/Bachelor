@@ -15,19 +15,23 @@ body{
 }
 
 .FrontpageMainDiv {
-	width: 700px;
+	width: 800px;
 	height: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #1E90FF;
+	background-color: #C0C0C0;
 	border-radius: 15px;
-	border: solid 3px #1E90FF;
+	border: solid 3px #C0C0C0;
 	padding: 3.5px;
 }
 
+.FrontHide {
+	display: none;
+}
+
 .button {
-	width: 212px;
-	height: 150px;
+	width: 160px;
+	height: 120px;
 	float: left;
 	cursor: pointer;
 	margin-left: 3.5px;
@@ -64,4 +68,83 @@ body{
 	font-family: Georgia, serif;
 	font-weight: bold;
 
+}
+
+.CGLine {
+	display: block;
+	width: 600px;
+	height: 1px;
+	border-top: 2px solid #ccc;
+	margin-left: auto;
+	margin-right:  auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.CGHeadText {
+	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	font-family: Georgia, serif;
+	font-weight: bold;
+}
+
+.CGInputDiv1 {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 30px;
+}
+.CGInputName {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	outline: none;
+	width: 100%;
+	height: 20px;
+	font-size: 18px;
+	text-align: center;
+}
+.targetDateDiv {
+	width: 600px;
+	height: 150px;
+	border: none
+	padding: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	font-family: Georgia, serif;
+	font-weight: bold;
+}
+.targetDateDiv2 {
+	width: 300px;
+	height: 150px;
+	border: none;
+	padding: none;
+	float:left;
+}
+.CGInputNr {
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 20px;
+	font-size: 18px;
+	text-align: center;
+}
+.CGInputNrDiv1 {
+	width: 90px;
+	margin-top: 15px;
+	float: left;
+	margin-left: 57px;
+}
+.CGInputNrDiv2 {
+	width: 90px;
+	margin-top: 15px;
+	float: left;
+	margin-left: 10px;
 }

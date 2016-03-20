@@ -13,12 +13,8 @@
   	<script src="Frontpage.js"></script>
 
 <div id='backDiv' class = 'backDiv'>
-
 	<div id= "Frontpage" class="FrontpageMainDiv">
-		<div class="top">
- 		Self Improvement Log
- 		</div>
-		
+		<div class="top"> Self Improvement Log </div>
 		<div class="button" onclick="goTo('CreateGoal')">
 			<div class="centerText2">
 			Create Goal <br> <br>
@@ -35,6 +31,34 @@
 			Create Goal
 			</div>
 		</div>
+	</div>
+
+	<div id="CreateGoal" class="FrontHide">
+		<div id="CGHeadDiv" class="top">Create Goal</div>
+		<div id="CGLine1" class="CGLine"></div>
+		<div id="CGHeadText1" class="CGHeadText">Goal Name</div>
+		<form id="CGform1">
+			<div class="CGInputDiv1">
+				<input type="text" id="inputName" class="CGInputName">
+			</div>
+			<div class="targetDateDiv">
+				<div id="tDDLeft" class="targetDateDiv2">
+					<div id="CGHeadText2" class="CGHeadText">End date</div>
+					<div id="inputDate" class="CGInputDiv1">
+						<input type="date" class="CGInputName">
+					</div>
+				</div>
+				<div id="tDDRight" class="targetDateDiv2">
+					<div id="CGHeadText3" class="CGHeadText">Current / Target</div>
+					<div id="inputNr1Div" class="CGInputNrDiv1">
+						<input id="currentInput" type="number" class="CGInputNr">
+					</div>
+					<div id="inputNr2Div" class="CGInputNrDiv2">
+						<input id="targetInput" type="number" class="CGInputNr">
+					</div>
+				</div>
+			</div>
+		</form>
 	</div>
 </div>
 </body>
