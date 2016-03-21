@@ -1,6 +1,6 @@
 .backDiv {
 	padding: 10px;
-	background: #DCDCDC;
+	background: #483D8B;
 	position: fixed;
   	top: 0;
   	left: 0;
@@ -19,9 +19,9 @@ body{
 	height: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #C0C0C0;
-	border-radius: 15px;
-	border: solid 3px #C0C0C0;
+	background-color: #A9A9A9;
+	border-radius: 7px;
+	border: solid 3px #A9A9A9;
 	padding: 3.5px;
 }
 
@@ -37,15 +37,15 @@ body{
 	margin-left: 3.5px;
 	margin-right: 3.5px;
 	margin-top: 10px;
-	background-color: #87CEFA;
+	background-color: #483D8B;
 	border-radius: 10px;
-	border: solid 2px #87CEFA;
+	border: solid 2px #483D8B;
 	padding: 5px;
 }
 
 .button:hover {
-	background-color: #008B8B;
-	border: solid 2px #008B8B;
+	background-color: #9400D3;
+	border: solid 2px #9400D3;
 }
 
 .centerText1 {
@@ -55,6 +55,7 @@ body{
 	text-align: center;
 	font-size: 20px;
 	font-family: Georgia, serif;
+	color: white;
 }
 
 .top {
@@ -65,7 +66,8 @@ body{
 	height: 35px;
 	width: 100%;
 	text-align: center;
-	font-family: Georgia, serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #483D8B;
 
 
 }
@@ -77,8 +79,8 @@ body{
 	border-top: 2px solid #ccc;
 	margin-left: auto;
 	margin-right:  auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 15px;
+	margin-bottom: none;
 }
 
 .CGHeadText {
@@ -134,6 +136,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	float-left
 }
 .CGInputNrDiv1 {
 	width: 90px;
@@ -147,3 +150,94 @@ body{
 	float: left;
 	margin-left: 10px;
 }
+.buttonNav {
+	width: 95px;
+	height: 25px;
+	background-color: #483D8B;
+	cursor: pointer;
+	color: white;
+	margin-left: 15px;
+	margin-right: auto;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.buttonNav:hover {
+	background-color: #9400D3;
+}
+
+.textAndInput{
+	width: 550px;
+	height: 24px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.textNoInput {
+	float: left;
+	font-size: 18px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	height: 22px;
+	width: 190px;
+}
+.inputNoText {
+	float: left;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	height: 19px;
+	width: 170px;
+
+}
+.choicesOuter {
+	width: 550px;
+	border: none;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F5FFFA;
+	margin-top: 15px;
+
+}
+.buttonChoiceOn {
+	width: 137.5px;
+	height: 25px;
+	float: left;
+	text-align: center;
+	background-color: #F5FFFA;
+	padding-top: 5px;
+	font-size: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.buttonChoiceOff {
+	width: 137.5px;
+	height: 25px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	background-color: #483D8B;
+	padding-top: 5px;
+	font-size: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}
+.buttonChoiceOff:hover {
+	background-color: #9400D3;
+}
+
+
+.buttonChoices {
+	width: 550px;
+	height: 25px;
+	border: none;
+}
+.chosenChoiceOn {
+	height: 375px;
+	width: 550px;
+}
+.chosenChoiceOff {
+	display: none;
+}
+

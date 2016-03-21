@@ -34,33 +34,51 @@
 	</div>
 
 	<div id="CreateGoal" class="FrontHide">
+		<div class="buttonNav" onclick="goTo('Frontpage')">Frontpage</div>
 		<div id="CGHeadDiv" class="top">Create Goal</div>
+		
 		<div id="CGLine1" class="CGLine"></div>
-		<div id="CGHeadText1" class="CGHeadText">Goal Name</div>
 		<form id="CGform1">
-			<div class="CGInputDiv1">
-				<input type="text" id="inputName" class="CGInputName">
+			<div class="textAndInput">
+				<div class="textNoInput">Goal name</div>
+				<input type="text" id="inputName" class="inputNoText">
 			</div>
 			<div id="CGLine1" class="CGLine"></div>
-			<div class="targetDateDiv">
-				<div id="tDDLeft" class="targetDateDiv2">
-					<div id="CGHeadText2" class="CGHeadText">End date</div>
-					<div id="inputDate" class="CGInputDiv1">
-						<input type="date" class="CGInputName">
-					</div>
-				</div>
-				<div id="tDDRight" class="targetDateDiv2">
-					<div id="CGHeadText3" class="CGHeadText">Current / Target</div>
-					<div id="inputNr1Div" class="CGInputNrDiv1">
-						<input id="currentInput" type="number" class="CGInputNr">
-					</div>
-					<div id="inputNr2Div" class="CGInputNrDiv2">
-						<input id="targetInput" type="number" class="CGInputNr">
-					</div>
-				</div>
+			<div class="textAndInput">
+				<div class="textNoInput">Start date</div>
+				<input type="text" id="inputName" class="inputNoText">
+			</div>
+			<div class="textAndInput">
+				<div class="textNoInput">End date</div>
+				<input type="text" id="inputName" class="inputNoText">
 			</div>
 			<div id="CGLine1" class="CGLine"></div>
+			<div class="textAndInput">
+				<div class="textNoInput">Current standpoint</div>
+				<input type="text" id="inputName" class="inputNoText">
+			</div>
+			<div class="textAndInput">
+				<div class="textNoInput">Target standpoint</div>
+				<input type="text" id="inputName" class="inputNoText">
+			</div>
+
+
+			<div id="CGLine1" class="CGLine"></div>
+			<div id="CGHeadDiv" class="top">Milestones</div>
+			<div class="choicesOuter">
+				<div class="buttonChoices">
+					<div id="choice1" class="buttonChoiceOn" onClick="goTo2('choice1','chosenChoice1')">Weekly</div>
+					<div id="choice2" class="buttonChoiceOff" onClick="goTo2('choice2','chosenChoice2')"> Monthly</div>
+					<div id="choice3" class="buttonChoiceOff" onClick="goTo2('choice3','chosenChoice3')"> Other interval</div>
+					<div id="choice4" class="buttonChoiceOff" onClick="goTo2('choice4','chosenChoice4')"> Custom</div>
+				</div>
+				<div id="chosenChoice1" class="chosenChoiceOn"> test1</div>
+				<div id="chosenChoice2" class="chosenChoiceOff"> test2</div>
+				<div id="chosenChoice3" class="chosenChoiceOff"> test3</div>
+				<div id="chosenChoice4" class="chosenChoiceOff"> test4</div>
+			</div>
 		</form>
+		
 	</div>
 </div>
 </body>
