@@ -13,6 +13,7 @@
   	<script src="Frontpage.js"></script>
 
 <div id='backDiv' class = 'backDiv'>
+	
 	<div id= "Frontpage" class="FrontpageMainDiv">
 		<div class="top"> Self Improvement Log </div>
 		<div class="button" onclick="goTo('CreateGoal')">
@@ -46,20 +47,32 @@
 			<div id="CGLine1" class="CGLine"></div>
 			<div class="textAndInput">
 				<div class="textNoInput">Start date</div>
-				<input type="text" id="inputName" class="inputNoText">
+				<div style="width:28px; height: 20px; float:left;"></div>
+				<input type="text" id="inputDate1S" class="inputDate1" 
+					placeholder="dd" maxlength="2">
+				<input type="text" id="inputDate2S" class="inputDate1" 
+					placeholder="mm" maxlength="2">
+				<input type="text" id="inputDate3S" class="inputDate2" 
+					placeholder="yyyy" maxlength="4">
 			</div>
 			<div class="textAndInput">
 				<div class="textNoInput">End date</div>
-				<input type="text" id="inputName" class="inputNoText">
+				<div style="width:28px; height: 20px; float:left;"></div>
+				<input type="text" id="inputDate1E" class="inputDate1" 
+					placeholder="dd" maxlength="2">
+				<input type="text" id="inputDate2E" class="inputDate1" 
+					placeholder="mm" maxlength="2">
+				<input type="text" id="inputDate3E" class="inputDate2" 
+					placeholder="yyyy" maxlength="4">
 			</div>
 			<div id="CGLine1" class="CGLine"></div>
 			<div class="textAndInput">
 				<div class="textNoInput">Current standpoint</div>
-				<input type="text" id="inputName" class="inputNoText">
+				<input type="text" id="inputSPS" class="inputNoText">
 			</div>
 			<div class="textAndInput">
 				<div class="textNoInput">Target standpoint</div>
-				<input type="text" id="inputName" class="inputNoText">
+				<input type="text" id="inputSPE" class="inputNoText">
 			</div>
 
 
@@ -67,15 +80,14 @@
 			<div id="CGHeadDiv" class="top">Milestones</div>
 			<div class="choicesOuter">
 				<div class="buttonChoices">
-					<div id="choice1" class="buttonChoiceOn" onClick="goTo2('choice1','chosenChoice1')">Weekly</div>
-					<div id="choice2" class="buttonChoiceOff" onClick="goTo2('choice2','chosenChoice2')"> Monthly</div>
-					<div id="choice3" class="buttonChoiceOff" onClick="goTo2('choice3','chosenChoice3')"> Other interval</div>
-					<div id="choice4" class="buttonChoiceOff" onClick="goTo2('choice4','chosenChoice4')"> Custom</div>
+					<div id="choice1" class="buttonChoiceOff" onClick="goTo2('choice1')">Weekly</div>
+					<div id="choice2" class="buttonChoiceOff" onClick="goTo2('choice2')"> Monthly</div>
+					<div id="choice3" class="buttonChoiceOff" onClick="goTo2('choice3')"> Other interval</div>
+					<div id="choice4" class="buttonChoiceOff" onClick="goTo2('choice4')"> Custom</div>
 				</div>
-				<div id="chosenChoice1" class="chosenChoiceOn"> test1</div>
-				<div id="chosenChoice2" class="chosenChoiceOff"> test2</div>
-				<div id="chosenChoice3" class="chosenChoiceOff"> test3</div>
-				<div id="chosenChoice4" class="chosenChoiceOff"> test4</div>
+				<div id="chosenChoice" class="chosenChoiceOn">
+					<div id="wrapper1" class="tempMilestone">Chose an interval option for your Milestones above</div>
+				</div>
 			</div>
 		</form>
 		
